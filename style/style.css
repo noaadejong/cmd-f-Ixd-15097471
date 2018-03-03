@@ -2,7 +2,7 @@ html {
     margin: 0;
     padding: 0;
 }
-
+@media only screen and (max-width:368px) {
 body {
     /* background-color: #191c1f; */
     background-color: black;
@@ -253,6 +253,7 @@ div.flight-km p {
 div.flight-km p:nth-child(2) {
     font-size: 1.0em;
 }
+}
 /* -------------------------------------------- COUNTDOWN -------------------------------------------- */
 
 
@@ -340,7 +341,7 @@ div.title{
 /* -------------------------------------------- MEDIA -------------------------------------------- */
 
 
-@media only screen and (min-width:368px) {
+@media only screen and (min-width:668px) {
     .container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 80px 950px 350px;
