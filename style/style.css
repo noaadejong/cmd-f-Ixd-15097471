@@ -224,6 +224,7 @@ div.main-content p#star-procent {
     position: absolute;
     left: 0;
     right: 0;
+    color: white;
     margin-top: 0;
 }
 div.anychart-credits {
