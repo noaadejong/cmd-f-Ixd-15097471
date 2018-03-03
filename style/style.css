@@ -54,8 +54,6 @@ span.km {
 .mainn {
   z-index: 1;
   width: 100%;
-  max-width: 800px;
-
 }
 
 .tank {
@@ -296,7 +294,7 @@ h1{
 .container {
     display: grid;
     width: 100%;
-    grid-template-rows: 65px 850px 730px 250px;
+    grid-template-rows: 65px 900px 730px 250px;
 
     grid-template-areas:
           "head"
