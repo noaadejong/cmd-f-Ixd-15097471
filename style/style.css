@@ -2,7 +2,6 @@ html {
     margin: 0;
     padding: 0;
 }
-@media only screen and (min-width:368px){
 body {
     /* background-color: #191c1f; */
     background-color: black;
@@ -290,7 +289,7 @@ h1{
 	padding-top: 5px;
 	font-size: 12px;
 }
-}
+
 /* -------------------------------------------- GRID -------------------------------------------- */
 .container {
     display: grid;
