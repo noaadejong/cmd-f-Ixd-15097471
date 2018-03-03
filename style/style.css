@@ -367,6 +367,7 @@ div.title{
      div.main-content p#star-procent {
          font-size: 1.5em;
          z-index: 1000;
+         color: white;
          position: absolute;
          left: 67%;
          right: 0;
