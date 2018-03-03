@@ -1,0 +1,443 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #191c1f; */
+    background-color: black;
+    color: #fff;
+    font-family: A-space Light Demo;
+}
+.item main {
+    width: 100%;
+
+}
+div.main-header p {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+div.title p {
+    width: 100%;
+    height: 30px;
+    font-size: 1.0em;
+    color: red;
+    text-transform: uppercase;
+}
+tspan {
+    font-size: 0.8em;
+}
+div.main-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+#demo {
+    font-size: 2.5em;
+}
+span.km {
+    text-align: center;
+}
+
+
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: scroll;
+  z-index: -1;
+  transition: ease-in 5.9;
+}
+
+.mainn {
+  z-index: 1;
+  width: 100%;
+  max-width: 800px;
+
+}
+
+.tank {
+  width: 250px;
+  height: 250px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+  border-radius: 5px;
+}
+.tank .level, .tank .remaining, .tank .bar {
+  position: absolute;
+  color: white;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.tank .level, .tank .remaining {
+  z-index: 3;
+}
+.tank .level {
+  font-size: 1.5em;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  text-align: center;
+  top: 90px;
+  font-weight: 300;
+}
+.tank .remaining {
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 130px;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+.tank .bar {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+}
+.tank.full .bar {
+  background-color: #00cc00;
+  top: 0px;
+}
+.tank.half .bar {
+  background-color: #ff8c1a;
+  top: 120px;
+}
+.tank.danger .bar {
+  background-color: #ff0000;
+  top: 235px;
+}
+.tank .inner {
+  background-color: #333;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  z-index: 2;
+  opacity: 0.95;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+hr#line {
+    border-color: red;
+}
+div#container {
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+.container-height {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.p {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 140px;
+}
+hr {
+    color: #fff;
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 5px;
+}
+div.flight-km {
+    display: flex;
+    justify-content: space-between;
+}
+div.flight-km p {
+    width: 20%;
+    float: left;
+    font-size: 0.7em;
+}
+div.flight-km p:nth-child(2) {
+    width: 30%;
+}
+path#ac_path_3 {
+    Fill: black;
+}
+#star-five {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   top: 45px;
+   margin: 0 auto;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid #3095CC;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid #ffffff;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -60px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid #3095CC;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+div.main-content p#star-procent {
+    font-size: 1.3em;
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+}
+div.anychart-credits {
+    display: none;
+}
+div.main-content p:nth-child(2){
+    color: yellow;
+}
+.circle {
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+	/* width and height can be anything, as long as they're equal */
+}
+hr#line {
+    position: absolute;
+    margin: 5px;
+    left: 10%;
+}
+div.flight-km p {
+    margin-top: 30px;
+}
+div.flight-km p:nth-child(2) {
+    font-size: 1.0em;
+}
+/* -------------------------------------------- COUNTDOWN -------------------------------------------- */
+
+
+h1{
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 17px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: red;
+    border: 1px solid white;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 10px;
+	border-radius: 3px;
+	background: red;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 12px;
+}
+
+/* -------------------------------------------- GRID -------------------------------------------- */
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 65px 850px 730px 250px;
+
+    grid-template-areas:
+          "head"
+          "main"
+          "aside"
+          "footer";
+    grid-gap: 5px;
+}
+.header{
+    grid-area: head;
+
+}
+.main{
+    grid-area: main;
+    height: 100%;
+}
+.aside{
+    grid-area: aside;
+}
+.footer{
+    grid-area: footer;
+}
+
+/* -------------------------------------------- LOGO -------------------------------------------- */
+.logo {
+    text-align: center;
+}
+.logo img {
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------- BLOCK CONTAINER -------------------------------------------- */
+
+
+div.title{
+    color: white;
+    text-align: center;
+}
+
+/* -------------------------------------------- MEDIA -------------------------------------------- */
+
+
+@media only screen and (min-width:768px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 80px 950px 350px;
+
+        grid-template-areas:
+              "head head head"
+              "main main aside"
+              "footer footer footer"
+     }
+     .logo img {
+
+         margin-top: 10px;
+         margin-bottom: 20px;
+     }
+     div.item.main {
+         width: 100%;
+     }
+     div.item.main div.main-speed div.title p {
+         width: 33,3%;
+     }
+     div.title p {
+         font-size: 1.3em;
+     }
+     div.main-content p#star-procent {
+         font-size: 1.5em;
+         z-index: 1000;
+         position: absolute;
+         left: 67%;
+         right: 0;
+         margin-top: 0;
+     }
+     div.flight-km p:nth-child(2) {
+         width: 20%;
+     }
+     div.flight-km p {
+         font-size: 0.8em;
+     }
+     #clockdiv{
+     	font-size: 25px;
+     }
+     .smalltext{
+     	font-size: 14px;
+     }#clockdiv div > span{
+     	padding: 13px;
+     }
+     div.flight-km p:nth-child(2) {
+         font-size: 1.2em;
+     }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 950px 250px;
+
+        grid-template-areas:
+              "head head"
+              "main aside"
+              "footer footer"
+     }
+     .logo img {
+         width: 20%;
+         margin-top: 10px;
+         margin-bottom: 20px;
+     }
+     div.title p {
+         font-size: 2.0em;
+     }
+     div.main-content p#star-procent {
+         font-size: 1.5em;
+         z-index: 1000;
+         position: absolute;
+         left: 50%;
+         right: 0;
+         margin-top: 0;
+     }
+     div.flight-km p:nth-child(2) {
+         width: 20%;
+     }
+     div.flight-km p {
+         font-size: 1.1em;
+     }
+     h1 {
+         font-size: 2.0em;
+     }
+     #clockdiv{
+     	font-size: 30px;
+     }
+     .smalltext{
+     	font-size: 16px;
+     }#clockdiv div > span{
+     	padding: 15px;
+     }
+     div.flight-km p:nth-child(2) {
+         font-size: 1.4em;
+     }
+
+}
+
+/* -------------------------------------------- BACKGROUND -------------------------------------------- */
