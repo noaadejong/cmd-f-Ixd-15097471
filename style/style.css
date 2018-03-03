@@ -347,7 +347,7 @@ div.title{
         grid-template-rows: 80px 950px 350px;
 
         grid-template-areas:
-              "head head head"
+              "head"
               "main main aside"
               "footer footer footer"
      }
