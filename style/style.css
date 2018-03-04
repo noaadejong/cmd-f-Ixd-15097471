@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+
 html {
     margin: 0;
     padding: 0;
@@ -6,7 +9,7 @@ body {
     /* background-color: #191c1f; */
     background-color: black;
     color: #fff;
-    font-family: A-space Light Demo;
+    font-family: A-space Light Demo, 'Space Mono', monospace;;
 }
 .item main {
     width: 100%;
