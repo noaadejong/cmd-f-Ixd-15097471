@@ -306,7 +306,6 @@ h1{
 }
 .header{
     grid-area: head;
-
 }
 .main{
     grid-area: main;
@@ -342,6 +341,7 @@ div.title{
 
 @media only screen and (min-width:768px) {
     .container {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 80px 950px 350px;
 
@@ -394,13 +394,13 @@ div.title{
 
 @media only screen and (min-width: 1200px) {
     .container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 100px 950px 250px;
 
         grid-template-areas:
-              "head head"
-              "main aside"
-              "footer footer"
+              "head head head"
+              "main main aside"
+              "footer footer footer"
      }
      .logo img {
          width: 20%;
