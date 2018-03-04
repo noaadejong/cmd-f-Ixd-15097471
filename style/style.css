@@ -295,7 +295,7 @@ h1{
 .container {
     display: grid;
     width: 100%;
-    grid-template-rows: 65px 900px 730px 250px;
+    grid-template-rows: 65px 900px 730px 310px;
 
     grid-template-areas:
           "head head head"
