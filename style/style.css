@@ -295,13 +295,14 @@ h1{
 .container {
     display: grid;
     width: 100%;
+    grid-template-columns: 1fr 1fr; 
     grid-template-rows: 65px 900px 730px 250px;
 
     grid-template-areas:
-          "head"
-          "main"
-          "aside"
-          "footer";
+          "head head"
+          "main main"
+          "aside aside"
+          "footer footer";
     grid-gap: 5px;
 }
 .header{
